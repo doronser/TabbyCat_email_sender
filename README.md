@@ -18,4 +18,5 @@ https://myaccount.google.com/lesssecureapps
 5. Download and run sendEmails.exe (from the same folder as the Excel):
 
 https://drive.google.com/file/d/1-qYTm56sx94nAo0wvWbHPktq8bkEyhYR/view?usp=sharing
+
 6. Profit :)
