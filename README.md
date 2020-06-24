@@ -1,5 +1,5 @@
 # TabbyCat_email_sender
-Quick and dirty python app to automate sending of TabbyCat private URLs
+Quick and dirty python app to automate sending of TabbyCat private URLs.
 
 1. Allow the script to send emails on your behalf:
 https://myaccount.google.com/lesssecureapps
