@@ -15,5 +15,6 @@ https://myaccount.google.com/lesssecureapps
   - Write the email message and add {0} where you want the URL to be added
   - convert message to HTML using this website (make sure to choose Use paragraph and line break tags(
   https://www.textfixer.com/html/convert-text-html.php
-5. Run sendEmails.exe
+5. Download and run sendEmails.exe (from the same folder as the Excel):
+https://drive.google.com/file/d/1-qYTm56sx94nAo0wvWbHPktq8bkEyhYR/view?usp=sharing
 6. Profit :)
