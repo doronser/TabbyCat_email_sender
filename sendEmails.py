@@ -20,8 +20,10 @@ try:
     server.ehlo()
     server.starttls()
     server.login(your_email, your_password)
-except :
+except Exception as e:
     print("could not connect to email server :(")
+    print(e)
+    exit(0)
 
 
 # Get all the Names, Email Addreses, Subjects and Messages
