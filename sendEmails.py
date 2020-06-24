@@ -31,31 +31,29 @@ all_names = email_list['Name']
 all_emails = email_list['Email']
 all_urls = email_list['URL']
 
-message = MIMEMultipart("alternative")
-message["Subject"] = subject
-message["From"] = your_email
-
-
 ### Create an HTML version of your message:
 # 1. in the message itself write {0} where you want the tabbycat link
 # 2. In order to convert your email to HTML format, use this website:
 #       https://www.textfixer.com/html/convert-text-html.php
 #       make sure to choose "Use paragraph and line break tags"
-text = ""
-part1 = MIMEText(text, "plain")
+MIMEText("", "plain")
 
 # Loop through the emails
-for idx in range(len(all_emails)):
+for idx, row in email_list.iterrows():
+    #reset the msg before every send
+    message = MIMEMultipart("alternative")
+    message["Subject"] = subject
+    message["From"] = your_email
 
     # Get each records name, email, subject and message
-    name = all_names[idx]
-    email = all_emails[idx]
-    url = all_urls[idx]
+    name = row['Name']
+    email = row['Email']
+    url = row['URL']
 
     html = html_temp.format(url)
     part2 = MIMEText(html, "html")
 
-    message["To"] = email
+    # message["To"] = email
     message.attach(part1)
     message.attach(part2)
 
