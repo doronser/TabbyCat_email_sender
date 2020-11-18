@@ -54,7 +54,6 @@ for idx, row in email_list.iterrows():
     part2 = MIMEText(html, "html")
 
     # message["To"] = email
-    message.attach(part1)
     message.attach(part2)
 
     try:
